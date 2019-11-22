@@ -6,7 +6,7 @@ machines = input("Maskiner: ")
 machines = machines.split(",")
 for machine in machines:
     machine = int(machine)
-print("Hvor mange minutter før vil du varsles? (min: 1)")
+print("Hvor mange minutter mellom hver sjekk? (min: 1)")
 interval = int(input("Minutter: "))
 controller = Controller(machines, int(interval))
 controller.start()
