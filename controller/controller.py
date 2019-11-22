@@ -56,7 +56,8 @@ class Controller:
             print("Feil brukernavn og passord")
             exit(2)
 
-    def send_notification(self, notification):
+    @staticmethod
+    def send_notification(notification):
         Notification(
             title='MieleLogic',
             description=notification,
